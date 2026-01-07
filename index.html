@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sustainable Development Goals - Predictive Models</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.4.0/dist/mermaid.min.js"></script>
+    <script>
+        // Initialize mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            themeVariables: {
+                primaryColor: '#00aaff',
+                backgroundColor: '#1a1a2e',
+                textColor: '#ffffff',
+                fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -12,46 +26,640 @@
             <img src="logo.png" alt="AI School Logo">
 		  <p class="subtitle">DEMO</p>
         </div>
+        <nav class="nav-links">
+            <a href="#welcome" class="nav-link" onclick="scrollToSection('welcome')">欢迎页面</a>
+            <a href="#methodology" class="nav-link" onclick="scrollToSection('methodology')">方法展示</a>
+            <a href="#visualization" class="nav-link" onclick="scrollToSection('visualization')">可视化</a>
+        </nav>
+        <div class="project-tag">
+            <img src="SDG.png" alt="SDG">
+        </div>
     </header> 
 
 
-    <div class="hero">
-        <img src="SDG.png" alt="SDG" width="600">
-      <blockquote>
+    <div id="welcome" class="hero">
+        <div class="hero-sdg">
+            <img src="SDG.png" alt="SDG">
+        </div>
         <blockquote>
+<<<<<<< Updated upstream
             <p class="subtitle">“基于知识图谱与图神经网络的持续发展目标预测模型”课题组</p>
+=======
+            <p class="subtitle">“基于知识图谱与深度学习的持续发展目标预测模型”展示页</p>
+>>>>>>> Stashed changes
         </blockquote>
-      </blockquote>
     </div>
 	
-	<div class='tableauPlaceholder' id='viz1715003844297' style='position: relative'>
-		<noscript><a href='#'>
-			<img alt='仪表板 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TX&#47;TXYFD5Q64&#47;1_rss.png' style='border: none' />
-			</a>
-		</noscript>
-		<object class='tableauViz'  style='display:none;'>
-			<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-			<param name='embed_code_version' value='3' /> 
-			<param name='path' value='shared&#47;TXYFD5Q64' /> 
-			<param name='toolbar' value='yes' />
-			<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TX&#47;TXYFD5Q64&#47;1.png' /> 
-			<param name='animate_transition' value='yes' />
-			<param name='display_static_image' value='yes' />
-			<param name='display_spinner' value='yes' />
-			<param name='display_overlay' value='yes' />
-			<param name='display_count' value='yes' />
-			<param name='language' value='zh-CN' />
-			<param name='filter' value='publish=yes' />
-		</object>
-	</div>                
-	<script type='text/javascript'>                    
-		var divElement = document.getElementById('viz1715003844297');                    
-		var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1366px';vizElement.style.height='795px';                    
-		var scriptElement = document.createElement('script');                    
-		scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-		vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+
+
+	
+	<!-- Methodology Section -->
+	<!-- 方法总览页面 -->
+	<section id="methodology" class="scroll-section">
+		<div class="section-content">
+			<div class="section-header">
+				<h3>方法总览</h3>
+				<p class="section-subtitle">Method Overview</p>
+			</div>
+
+			<!-- 核心定位 -->
+			<div class="core-positioning">
+				<div class="content-block">
+					<h4>核心定位</h4>
+					<p>聚焦“SDGs专属+技术融合+双任务输出”的创新核心，用“数据→专属知识图谱→改进GNN→双任务结果”的极简链路，清晰呈现模型如何解决传统方法难以处理的SDGs动态关联预测问题。</p>
+				</div>
+			</div>
+
+			<!-- 展示内容 -->
+			<div class="display-content">
+				<!-- 第一层：模型目标 + 核心创新链路 -->
+				<div class="innovation-layout">
+					<!-- 左侧：模型目标 -->
+					<div class="model-objective-section">
+						<div class="content-card">
+							<div class="card-header">
+								<h5>模型目标</h5>
+							</div>
+							<div class="card-body">
+								<p>针对17个SDGs的协同/拮抗关系，融合知识图谱的语义表达优势与改进图神经网络的复杂关系捕捉能力，实现“SDGs进度精准预测+目标间相互作用量化”双任务，为政策制定提供可解释的决策支持。</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- 右侧：核心创新链路 -->
+					<div class="innovation-chain-section">
+						<div class="content-card flow-chart-card">
+							<div class="card-header">
+								<h5>核心创新链路</h5>
+							</div>
+							<div class="card-body">
+								<div class="magnifier-container">
+    <div class="magnifier-thumb">
+        <img src="test-chain.png" alt="核心创新链路" class="flow-chart-image">
+        <div class="magnifier-mask"></div>
+    </div>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 第二层：核心技术栈 -->
+				<div class="tech-stack-section">
+					<div class="content-card">
+						<div class="card-header">
+							<h5>核心技术栈</h5>
+						</div>
+						<div class="card-body">
+							<div class="tech-stack">
+								<div class="stack-category">
+									<h6>数据层</h6>
+									<p>联合国数据库、世界银行WDI等SDGs权威数据源</p>
+								</div>
+								<div class="stack-category">
+									<h6>知识图谱层</h6>
+									<p>Neo4j（定制化实体关系设计）、规则推理（SDGs专属）</p>
+								</div>
+								<div class="stack-category">
+									<h6>模型层</h6>
+									<p>PyTorch+PyG（改进GAT核心架构）</p>
+								</div>
+								<div class="stack-category">
+									<h6>工具层</h6>
+									<p>SHAP（模型解释）、Tableau（可视化支持）</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 核心技术拆解页面 -->
+	<section id="tech-breakdown" class="scroll-section">
+		<div class="section-content">
+			<div class="section-header">
+				<h3>核心技术拆解</h3>
+				<p class="section-subtitle">Core Technology Breakdown</p>
+			</div>
+			
+			<!-- Core Technology Breakdown -->
+			<section class="tech-breakdown">
+			
+			<div class="tech-module">
+				<h4>模块1：SDGs专属数据预处理</h4>
+				
+				<div class="module-objective">
+					<h5>核心目标</h5>
+					<p>针对SDGs数据“多源异构、指标繁杂、存在缺失/异常”的特点，设计专属预处理流程，而非通用数据处理方案。</p>
+				</div>
+				
+				<div class="optimization-table">
+					<table>
+						<thead>
+							<tr>
+								<th>优化方向</th>
+								<th>核心创新操作</th>
+								<th>应用价值</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>多源数据对齐</td>
+								<td>基于“SDGs指标ID+时间戳”双关键字，统一联合国/世界银行等数据源格式</td>
+								<td>解决跨机构数据异构问题，确保指标一致性</td>
+							</tr>
+							<tr>
+								<td>缺失值智能填补</td>
+								<td>结合SDGs指标相关性（如贫困与教育指标关联），采用“领域适配型插值”替代通用均值填补</td>
+								<td>保留指标内在关联，提升数据真实性</td>
+							</tr>
+							<tr>
+								<td>异常值精准识别</td>
+								<td>基于SDGs目标阈值（如碳排放标准、贫困率红线），构建领域专属异常判定规则</td>
+								<td>避免通用3σ原则误判领域合理波动</td>
+							</tr>
+							<tr>
+								<td>特征筛选策略</td>
+								<td>聚焦SDGs核心影响因子（如经济、环境、社会三大维度），剔除冗余指标</td>
+								<td>减少计算开销，聚焦关键预测变量</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<div class="tech-module">
+				<h4>模块2：SDGs专属知识图谱构建</h4>
+				
+				<div class="module-objective">
+					<h5>核心目标</h5>
+					<p>打破通用知识图谱的泛化性缺陷，构建贴合SDGs场景的实体关系网络，为GNN提供精准语义支撑。</p>
+				</div>
+				
+				<div class="entity-relation">
+					<h5>创新型实体与关系设计</h5>
+					
+					<div class="tables-container">
+						<div class="table-item">
+							<h6>核心实体</h6>
+							<div class="optimization-table">
+								<table>
+									<thead>
+										<tr>
+											<th>实体类型</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>SDG核心目标</td>
+											<td>17个，如“零饥饿”“气候行动”</td>
+										</tr>
+										<tr>
+											<td>专属指标</td>
+											<td>248个，如SDG2.1.1“饥饿人口比例”</td>
+										</tr>
+										<tr>
+											<td>关联主体</td>
+											<td>数据机构、国家/地区，如世界银行、美国</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<div class="table-item">
+							<h6>核心关系</h6>
+							<div class="optimization-table">
+								<table>
+									<thead>
+										<tr>
+											<th>关系类型</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>BELONGS_TO</td>
+											<td>指标→目标，如2.1.1→SDG2</td>
+										</tr>
+										<tr>
+											<td>CUSTODIAN_BY</td>
+											<td>指标→机构，如1.1.1→世界银行</td>
+										</tr>
+										<tr>
+											<td>INTERACTS_WITH</td>
+											<td>目标→目标，含正向促进/负向抑制标签</td>
+										</tr>
+										<tr>
+											<td>RELATED_TO</td>
+											<td>指标→指标，基于SDGs指标框架逻辑</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="reasoning-rules">
+					<h5>专属推理规则</h5>
+					
+					<div class="tables-container">
+						<div class="table-item">
+							<div class="optimization-table">
+								<table>
+									<thead>
+										<tr>
+											<th>规则编号</th>
+											<th>规则内容</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>推理规则1</td>
+											<td>若指标A与指标B相关（RELATED_TO），且指标B由机构C负责（CUSTODIAN_BY），则推断指标A大概率也由机构C负责。</td>
+										</tr>
+										<tr>
+											<td>推理规则2</td>
+											<td>若目标X与目标Y存在促进关系（INTERACTS_WITH+正向），且目标Y与目标Z存在促进关系，则推断目标X与目标Z存在潜在促进关系。</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<div class="table-item">
+							<div class="reasoning-image">
+								<img src="Reasoning.png" alt="推理规则示意图" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tech-module">
+				<h4>模块3：改进GAT双任务模型</h4>
+				
+				<div class="module-objective">
+					<h5>核心目标</h5>
+					<p>摒弃通用GNN的单一任务设计，针对SDGs需求改进GAT架构，实现“预测+关系量化”双任务同步输出。</p>
+				</div>
+				
+				<div class="tables-container">
+					<div class="table-item">
+						<div class="architecture-innovation">
+							<h5>架构创新：轻量改进GAT</h5>
+							<div class="optimization-table">
+								<table>
+									<thead>
+										<tr>
+											<th>创新点</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>注意力头动态调整</td>
+											<td>针对SDGs指标重要性差异，采用“目标权重导向”的注意力分配（如气候行动相关指标权重自适应提升）。</td>
+										</tr>
+										<tr>
+											<td>简化网络层数</td>
+											<td>2层GAT卷积+1层双输出全连接层，平衡精度与效率（适配SDGs数据集规模）。</td>
+										</tr>
+										<tr>
+											<td>关系偏置融入</td>
+											<td>将知识图谱中的INTERACTS_WITH关系标签作为初始化偏置，辅助模型快速学习目标间关联。</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<div class="table-item">
+						<div class="dual-task">
+							<h5>双任务融合创新</h5>
+							<div class="optimization-table">
+								<table>
+									<thead>
+										<tr>
+											<th>任务类型</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>任务1：SDGs进度预测</td>
+											<td>输出17个SDGs的年度实现进度预测值，将知识图谱的实体语义特征作为GAT输入补充。</td>
+										</tr>
+										<tr>
+											<td>任务2：目标间关系矩阵生成</td>
+											<td>输出17×17的SDGs相互作用矩阵，首次在SDGs预测模型中实现“预测结果+关系量化”同步输出。</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="core-code">
+					<h5>核心逻辑简化表达</h5>
+					<pre class="code-block python">
+<span class="python-keyword">def</span> <span class="python-function">Improved_GAT_Train</span>(kg_features, sdg_numerical_data):
+    <span class="python-comment"># 输入：知识图谱语义特征 + SDGs数值特征（融合创新）</span>
+    x = <span class="python-function">concat</span>(kg_features, sdg_numerical_data)
+    <span class="python-comment"># 改进GAT层：目标权重导向注意力计算（创新点）</span>
+    h = <span class="python-function">GAT_Conv</span>(x, edge_index, target_weight_bias=kg_interact_bias)
+    <span class="python-comment"># 双任务输出（创新点）</span>
+    sdg_pred = <span class="python-function">Predict_Head</span>(h)  <span class="python-comment"># SDGs进度预测</span>
+    relation_matrix = <span class="python-function">Relation_Head</span>(h)  <span class="python-comment"># 17×17关系矩阵</span>
+    relation_matrix = <span class="python-function">reshape</span>(relation_matrix, (<span class="python-number">17</span>,<span class="python-number">17</span>))
+    <span class="python-keyword">return</span> sdg_pred, relation_matrix
+					</pre>
+				</div>
+			</div>
+			
+			<div class="tech-module">
+				<h4>模块4：SDGs适配型训练优化</h4>
+				
+				<div class="module-objective">
+					<h5>核心目标</h5>
+					<p>针对SDGs数据的时间序列特性和目标关联性，优化训练策略，提升模型泛化能力。</p>
+				</div>
+				
+				<div class="optimization-table">
+					<table>
+						<thead>
+							<tr>
+								<th>优化方向</th>
+								<th>创新操作</th>
+								<th>应用价值</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>数据集划分</td>
+								<td>按时间序列连续划分（训练集→倒数3年，验证集→倒数2年，测试集→最后1年）</td>
+								<td>贴合SDGs“预测未来进度”的实际场景，避免数据泄露</td>
+							</tr>
+							<tr>
+								<td>损失函数适配</td>
+								<td>采用“MSE主损失+关系矩阵正则化损失”组合</td>
+								<td>平衡预测精度与关系矩阵的合理性，确保双任务协同优化</td>
+							</tr>
+							<tr>
+								<td>调参策略</td>
+								<td>针对SDGs指标差异，采用“目标分组调参”（如环境类目标学习率略低，社会类目标学习率略高）</td>
+								<td>适配不同类型SDGs的预测难度，提升整体精度</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		</section>
+		</div>
+	</section>
+	
+	<!-- Tableau Embed using Official API -->
+	<div id="visualization" style='width: 100%; max-width: 1400px; margin: 30px auto; padding: 15px; background-color: rgba(26, 26, 46, 0.95); border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); overflow: hidden;'>
+		<div class='tableau-title' style='text-align: center; margin-bottom: 20px; color: #ffffff; font-size: 28px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);'>
+			SDGs实现进度与关联关系可视化看板
+		</div>
+		<div class='tableauPlaceholder' id='viz1767758152771' style='position: relative; width: 100%; height: 900px;'>
+			<noscript>
+				<a href='#'>
+					<img alt='仪表板 1 ' src='https://public.tableau.com/static/images/TX/TXYFD5Q64/1_rss.png' style='border: none; width: 100%; height: auto;' />
+				</a>
+			</noscript>
+			<object class='tableauViz' style='display:block; width: 100%; height: 100%;'>
+				<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+				<param name='embed_code_version' value='3' />
+				<param name='path' value='views/1_17149056585010/1_1?:language=zh-CN&amp;:embed=true&amp;:sid=3798346E2D7744F1A3C306CFF3538578-0:0&amp;:redirect=auth&amp;showOnboarding=true' />
+				<param name='toolbar' value='yes' />
+				<param name='static_image' value='https://public.tableau.com/static/images/TX/TXYFD5Q64/1.png' />
+				<param name='animate_transition' value='yes' />
+				<param name='display_static_image' value='yes' />
+				<param name='display_spinner' value='yes' />
+				<param name='display_overlay' value='yes' />
+				<param name='display_count' value='yes' />
+				<param name='language' value='zh-CN' />
+				<param name='filter' value='showOnboarding=true' />
+			</object>
+		</div>
+		<script type='text/javascript'>
+			var divElement = document.getElementById('viz1767758152771');
+			var vizElement = divElement.getElementsByTagName('object')[0];
+			vizElement.style.width='100%';
+			vizElement.style.height='100%';
+			var scriptElement = document.createElement('script');
+			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+			vizElement.parentNode.insertBefore(scriptElement, vizElement);
+			
+			// Add responsive sizing for different screen sizes
+			window.addEventListener('resize', function() {
+				resizeTableau();
+			});
+			
+			function resizeTableau() {
+				var width = divElement.offsetWidth;
+				var height;
+				
+				// Adjust height based on screen size
+				if (width < 768) {
+					// Mobile devices
+					height = width * 0.8;
+				} else if (width < 1200) {
+					// Tablets
+					height = width * 0.7;
+				} else {
+					// Desktop
+					height = Math.max(800, width * 0.6);
+				}
+				
+				divElement.style.height = height + 'px';
+				vizElement.style.height = height + 'px';
+			}
+			
+			// Initial resize
+			setTimeout(resizeTableau, 500);
+		</script>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-content">
+			<div class="footer-section">
+				<h3>关于项目</h3>
+				<p>本课题受国家级大学生创新创业训练计划资助</p>
+				<p>项目编号：202310363020</p>
+			</div>
+			<div class="footer-section">
+				<h3>项目组信息</h3>
+				<p>项目指导教师：赵转哲、刘永明</p>
+				<p>项目成员：<a href="https://cprgzn.github.io/profile-website" target="_blank">常普（主持）</a>、姬培鸿、苗如意</p>
+			</div>
+			<div class="footer-section">
+				<h3>相关链接</h3>
+				<p><a href="https://sdgs.un.org/goals" target="_blank">联合国可持续发展目标</a></p>
+				<p><a href="https://sai.ahpu.edu.cn/" target="_blank">安徽工程大学人工智能学院</a></p>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>© CP. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script type='text/javascript'>
+		// Smooth scroll function for navigation links
+		function scrollToSection(sectionId) {
+			event.preventDefault();
+			const section = document.getElementById(sectionId);
+			if (section) {
+				const headerHeight = 80; // Height of the fixed header
+				const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+				window.scrollTo({
+					top: sectionTop - headerHeight,
+					behavior: 'smooth'
+				});
+			}
+		}
+		
+		// Scroll effect for SDG logo and navigation
+		window.addEventListener('scroll', function() {
+			var hero = document.querySelector('.hero');
+			var heroSDG = document.querySelector('.hero-sdg');
+			var headerSDG = document.querySelector('header .project-tag');
+			var navLinks = document.querySelector('.nav-links');
+			
+			// Get the position of the hero section
+			var heroRect = hero.getBoundingClientRect();
+			var scrollPosition = window.scrollY;
+			
+			// Calculate scroll progress (0 to 1) relative to hero section
+			var heroHeight = hero.offsetHeight;
+			var startScroll = 0;
+			var endScroll = heroHeight - 100;
+			var scrollProgress = Math.min(Math.max((scrollPosition - startScroll) / (endScroll - startScroll), 0), 1);
+			
+			// Smooth transition effect
+			if (scrollProgress > 0) {
+				// Hero SDG: shrink and fade out
+				heroSDG.style.opacity = (1 - scrollProgress).toFixed(2);
+				heroSDG.style.transform = 'scale(' + (1 - scrollProgress * 0.3).toFixed(2) + ')';
+				
+				// Header SDG: fade in
+				headerSDG.style.opacity = scrollProgress.toFixed(2);
+				headerSDG.style.transform = 'translateX(' + ((1 - scrollProgress) * 100).toFixed(0) + 'px)';
+				
+				// Navigation links: slide left to make space for SDG logo
+				navLinks.style.transform = 'translateX(' + ((-scrollProgress) * 100).toFixed(0) + 'px)';
+			} else {
+				// Reset to initial state
+				heroSDG.style.opacity = '1';
+				heroSDG.style.transform = 'scale(1)';
+				headerSDG.style.opacity = '0';
+				headerSDG.style.transform = 'translateX(100px)';
+				navLinks.style.transform = 'translateX(0)';
+			}
+		});
 	</script>
 
+<script>
+// 放大镜效果实现
+function initMagnifier() {
+    const containers = document.querySelectorAll('.magnifier-container');
+    
+    // 获取DOM顶层的预览窗口
+    const preview = document.querySelector('.magnifier-preview');
+    const largeImg = preview.querySelector('.magnifier-large');
+    
+    containers.forEach(container => {
+        const thumb = container.querySelector('.magnifier-thumb');
+        const mask = container.querySelector('.magnifier-mask');
+        const thumbImg = container.querySelector('.flow-chart-image');
+        
+        // 检查必要的元素是否存在
+        if (!thumb || !mask || !thumbImg) return;
+        
+        // 设置大图尺寸为小图的2.5倍，实现更大的放大效果
+        largeImg.style.width = (thumbImg.width * 2.5) + 'px';
+        largeImg.style.height = (thumbImg.height * 2.5) + 'px';
+        
+        // 鼠标进入时显示遮罩和预览窗口
+        thumb.addEventListener('mouseenter', () => {
+            mask.style.display = 'block';
+            preview.style.display = 'block';
+            
+            // 计算预览窗口的位置，确保显示在图片正上方
+            const thumbRect = thumb.getBoundingClientRect();
+            const previewWidth = 600;
+            const previewHeight = 180;
+            
+            // 水平居中显示在图片上方
+            const previewLeft = thumbRect.left + (thumbRect.width - previewWidth) / 2;
+            
+            // 垂直显示在图片上方20px
+            const previewTop = thumbRect.top - previewHeight - 20;
+            
+            preview.style.left = previewLeft + 'px';
+            preview.style.top = previewTop + 'px';
+            preview.style.transform = 'none';
+        });
+        
+        // 鼠标离开时隐藏遮罩和预览窗口
+        thumb.addEventListener('mouseleave', () => {
+            mask.style.display = 'none';
+            preview.style.display = 'none';
+        });
+        
+        // 鼠标移动时更新遮罩位置和预览内容
+        thumb.addEventListener('mousemove', (e) => {
+            // 获取鼠标在缩略图中的坐标
+            const rect = thumb.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // 获取缩略图和遮罩的尺寸
+            const thumbWidth = thumb.offsetWidth;
+            const thumbHeight = thumb.offsetHeight;
+            const maskWidth = mask.offsetWidth;
+            const maskHeight = mask.offsetHeight;
+            
+            // 计算遮罩的位置（限制在缩略图内）
+            let maskX = x - maskWidth / 2;
+            let maskY = y - maskHeight / 2;
+            
+            maskX = Math.max(0, Math.min(maskX, thumbWidth - maskWidth));
+            maskY = Math.max(0, Math.min(maskY, thumbHeight - maskHeight));
+            
+            // 设置遮罩位置
+            mask.style.left = maskX + 'px';
+            mask.style.top = maskY + 'px';
+            
+            // 计算放大比例
+            const scaleX = largeImg.offsetWidth / thumbImg.width;
+            const scaleY = largeImg.offsetHeight / thumbImg.height;
+            
+            // 设置大图位置（反向移动）
+            largeImg.style.left = -(maskX * scaleX) + 'px';
+            largeImg.style.top = -(maskY * scaleY) + 'px';
+        });
+    });
+}
+
+// 页面加载完成后初始化放大镜
+window.addEventListener('load', initMagnifier);
+</script>
+
+<!-- 预览窗口 - 放在DOM顶层以避免z-index限制 -->
+<div class="magnifier-preview">
+    <img src="test-chain.png" alt="核心创新链路" class="magnifier-large">
+</div>
 
 </body>
 </html>
